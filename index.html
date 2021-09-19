@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="./css/default.css">
+    <!-- <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/theme.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <script src="https://kit.fontawesome.com/cda880dbf7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <main class="main_body">
+        <div class="overlay">
+
+            <!-- Top Section -->
+
+
+            <div class="top">
+
+                <!-- Left Most On-Clicked Menu Starts-->
+
+                <nav id="navbar1" class="navbar">
+                    <i id="close" class="fa fa-window-close close"></i>
+                    <ul class="nav_bar">
+                        <li class="nav_links"><a href="index.html">Home</a></li>
+                        <li class="nav_links"><a href="#">Notification</a></li>
+                        <li class="nav_links"><a href="#">Options</a></li>
+                        <li class="nav_links"><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Left Most On-Clicked Menu Ends-->
+
+                <div class="top_content">
+                    <div class="left">
+                        <a href="#" id="nav_trigger">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </div>
+
+                    <div class="mid">
+                        <a href="index.html">
+                            To Do List
+                        </a>
+                    </div>
+
+                   <div class="right">
+                        <a id="nav_trigger2" href="index.html"> <img src="./img/icon.png" alt="icon"> </a>
+                    </div>
+                </div>
+
+                <!-- Right Most On-Clicked Menu Starts -->
+
+                <nav id="navbar2" class="navbar2">
+                    <i id="close2" class="fa fa-window-close close close2"></i>
+                    <ul class="nav_bar">
+                        <li class="nav_links"><a href="index.html">Home</a></li>
+                        <li class="nav_links"><a href="#">Profile</a></li>
+                        <li class="nav_links"><a href="#">logout</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Most On-Clicked Menu Ends -->
+
+
+            </div>
+
+            <!-- Main Section -->
+
+
+
+            <div class="content">
+                <div class="app_content_body">
+                    <div class="app_content">
+                        <form action="" class="form" id="form" name="data_form">
+                            <ul>
+
+                                <li>
+
+                                    <button type="button" class="btn1 lg-btn" name='bangla'
+                                    onclick="khoj(name)">
+                                        Bangla
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name='foreign' onclick="khoj(name)">
+                                        Foreign
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name='islam' onclick="khoj(name)">
+                                        Islam
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name='motivate' onclick="khoj(name)">
+                                        Motivate
+                                    </button>
+
+                                </li>
+
+
+                                <li>
+                                    <button type="button" class="btn1 lg-btn" name='series' onclick="khoj(name)">
+                                        Series
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name="thriller" onclick="khoj(name)">
+                                        Thriller
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name="text" onclick="khoj(name)"    >         Text
+                                    </button>
+
+                                    <button type="button" class="btn1 lg-btn" name="others" onclick="khoj(name)">
+                                        Others
+                                    </button>
+                                </li>
+
+                            </ul>
+
+                        </form>
+                        <hr class="hr">
+
+                        
+
+                        <ul id="list">
+
+                            <div class="gallery" id="gallery">
+                            
+                            </div>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+
+            <div class="bottom">
+                <div class="bottom_content">
+                    <ul class="nav_links">
+                        <li>
+                            <a href="index.html" class="active nav_items">
+                                <i class="fas fa-home"></i>
+                                <span>home</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="nav_items">
+                                <i class="fa fa-cogs"></i>
+                                <span>options</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_items">
+                                <i class="fas fa-comment-dots"></i>
+                                <span>contact us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav_items">
+                                <i class="fas fa-sign-out-alt"></i>
+                                <span>logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+
+    <script src="./js/control.js"></script>
+
+</body>
+
+</html>

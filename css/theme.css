@@ -1,0 +1,318 @@
+.top_content,
+.bottom_content {
+    background: var(--color2);
+    /* border: 1px solid red; */
+    /* height: 70px; */
+    /* width: 100%; */
+    /* padding: 5px; */
+}
+
+
+
+/* Top Part Starts  */
+
+
+.top_content .left a {
+    color: var(--white);
+}
+
+.top_content .left a:hover {
+    color: var(--color1);
+}
+
+
+/* Left Nav Bar Starts */
+
+.top {
+    position: relative;
+}
+
+.top .navbar {
+    position: absolute;
+    background-color: var(--color2);
+    width: 100%;
+    height: 40vh;
+    top: 100%;
+    left: -200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 100;
+    /* padding: 5px 20px; */
+}
+
+.top .navbar_show {
+    left: 0;
+}
+
+.top .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 18px;
+    cursor: wait;
+}
+
+.top .close:hover {
+    color: var(--red);
+    background-color: var(--black);
+}
+
+.top .nav_links {
+    width: 100%;
+    display: inline-flex;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    /* font-weight: 500; */
+}
+
+.nav_bar .nav_links a {
+    width: 100%;
+    color: var(--white);
+    padding: 10px 25px;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.nav_bar .nav_links:hover {
+    background-color: var(--black);
+}
+
+.nav_bar .nav_links:hover a {
+    color: var(--color2);
+}
+
+/* Left Nav Bar Ends */
+
+
+
+
+
+.top_content .mid input {
+    border: 2px solid var(--white);
+    color: var(--color2);
+    background: var(--white);
+}
+
+.top_content .mid input:focus {
+    outline: 2px solid var(--primary1);
+}
+
+.top_content .mid a {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--white);
+}
+
+.top_content .mid a:hover {
+    color: var(--color1);
+}
+
+.top_content .right img {
+    border: 3px solid var(--white);
+}
+
+.top_content .right img:hover {
+    border: 3px solid var(--color1);
+}
+
+
+
+
+
+/* Right Nav Bar Starts */
+
+
+.top .navbar2 {
+    position: absolute;
+    width: 50%;
+    height: 28vh;
+    top: 100%;
+    right: -200%;
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 100;
+    /* padding: 5px 20px; */
+}
+
+.top .navbar_show2 {
+    right: 0;
+}
+
+.top .navbar2 .close2 {
+    right: 0;
+    top: 0;
+}
+
+
+/* Right Nav Bar Ends */
+
+
+
+
+
+
+
+
+/* Top Part Ends  */
+
+
+
+/* Input Part Starts  */
+
+.form {
+    /* background: var(--bgcolor); */
+    background: var(--glass);
+    /* background: var(--transparent); */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* color: var(--color2); */
+}
+
+.form ul {
+    padding: 8px 10px;
+    /* margin: 10px 0px; */
+}
+
+.form ul li {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin: 10px 0px; */
+    padding: 3px 3px;
+
+}
+
+
+.btn1 {
+    margin: 4px 4px;
+    padding: 8px 6px;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    /* background: var(--color2); */
+    font-size: 15px;
+    background: var(--transparent);
+    /* border-radius: 5px; */
+    border: 2px solid var(--color2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.315);
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+
+.btn1:hover {
+    /* background: var(--transparent); */
+    background: var(--color2);
+    color: var(--color1);
+    border: 2px solid var(--color2);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.red {
+    background: var(--color3);
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid var(--color3);
+}
+
+.red:hover {
+    color: var(--color3);
+    background: var(--transparent);
+    border: 1px solid var(--color3);
+}
+
+.app_content .form .active {
+    color: var(--black);
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    background-color: var(--white);
+    border: 1px solid var(--white);
+}
+
+/* .app_content .form .active:hover{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--color2);
+} */
+
+/* Input Part Ends  */
+
+
+/*      Result Part        */
+
+
+.hr {
+    border-bottom: 6px solid var(--black);
+}
+
+
+/* Output Part Starts  */
+
+
+#list {
+    padding: 5px 10px;
+    /* border: 1px solid gray; */
+    /* margin-top: 5px; */
+}
+
+#list li {
+    margin: 3px;
+    /* padding: 15px; */
+    width: 40px;
+    height: 40px;
+    /* border-radius: 10px; */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary1);
+    font-weight: 600;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+#list li:hover {
+    color: var(--white);
+    border: 2px solid var(--secondary1);
+    border-radius: 10px;
+    /* border-radius: 50%; */
+}
+
+
+/* Output Part Ends  */
+
+
+
+/* Bottom Part Starts */
+
+
+.bottom .nav_links li a {
+    color: var(--color1);
+}
+
+.bottom .nav_links li a:hover {
+    color: var(--white);
+}
+
+.bottom .nav_links li a.active {
+    color: var(--white);
+}
+
+.bottom .nav_links li a.active:hover {
+    color: var(--color1);
+}
+
+
+
+/* Bottom Part Ends */
