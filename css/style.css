@@ -32,14 +32,15 @@
     -webkit-backdrop-filter: blur(7px);
     /* border-radius: 25px; */
 
-    background: url('../img/bg3.jpg') no-repeat center;
+    /* background: url('../img/m_bg.png') no-repeat center; */
+    background: url('../img/bg.jpg') no-repeat center;
     background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.815);
     height: 100vh;
 }
 
@@ -138,8 +139,9 @@
     flex: 1;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 121px);
     
 }
 
