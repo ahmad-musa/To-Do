@@ -29,29 +29,3 @@ nav_close2.addEventListener('click', function (e) {
     e.preventDefault();
     document.getElementById('navbar2').classList.remove('navbar_show2');
 });
-
-
-
-
-
-///////////////       Result                      ////////////////////
-
-
-// function khoj(boi){
-    
-// imgbody = ' ';
-
-// for (let index = 1; index < 10; index++) {
-//     imgbody+=
-//     `
-//     <div class="img_holder">
-//                                 <img class= " img" src="./img/${boi}/img${index}.jpg">
-//                             </div>
-//     `;
-
-// }
-
-// document.getElementById('gallery').innerHTML=imgbody;
-// }
-
-
