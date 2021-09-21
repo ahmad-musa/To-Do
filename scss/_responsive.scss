@@ -1,0 +1,150 @@
+@media (min-width: 576px) {
+
+    body {
+        background: url('../img/bg.jpg') no-repeat center;
+        background-size: cover;
+        height: 100%;
+
+        .main_body {
+            margin: 0 auto;
+            box-sizing: border-box;
+            border-radius: 25px;
+            /*  */
+            /* background: $glass;
+            background: $transparent; 
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);  */
+            height: 100vh;
+            padding: 2vh;
+            /* margin: 2vh auto; */
+            /* border-radius: 25px; */
+
+            .overlay {
+                background-color: rgba(0, 0, 0, .5);
+                height: 100%;
+                margin: 0 auto;
+                overflow: hidden;
+                border-radius: 25px;
+
+
+                .top {
+                    height: 70px;
+                    width: 100%;
+                    padding: 5px;
+                    position: relative;
+
+                    /* Navbar Starts */
+
+                    .navbar {
+                        position: absolute;
+                        width: 63%;
+                        height: 33vh;
+                        top: 93%;
+                        left: -300%;
+                        background-color: $color2;
+                    }
+
+                    .navbar_show {
+                        left: 5px;
+                    }
+
+
+                    .navbar2 {
+                        width: 40%;
+                        // height: 21vh;
+                        top: 93%;
+                        right: -300%;
+                        height: 28vh;
+
+                        .close2 {
+                            right: 5px;
+                            top: 3px;
+                        }
+                    }
+
+                    .navbar_show2 {
+                        right: 5px;
+                    }
+
+                    /* Navbar Ends */
+
+                    .top_content {
+                        border-radius: 20px 20px 0 0;
+                        box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);
+                    }
+                }
+
+
+                .content {
+                    flex: 1;
+                    padding: 5px 5px;
+                    height: calc(100vh - 170px);
+
+                    .app_content {
+                        flex: 1;
+                        /* background: $bgcolor; */
+                        background: $glass;
+                        backdrop-filter: blur(7px);
+                        -webkit-backdrop-filter: blur(7px);
+
+                        .btn1 {
+                            /* width: 100px; */
+                            /* height: 50px; */
+                            padding: 10px 6px;
+                        }
+
+                        .lg-btn {
+                            width: 115px;
+                            padding: 15px 10px;
+                            font-size: 18px;
+                        }
+
+                        .gallery {
+                            .img_holder {
+                                .img {
+                                    height: 30vh;
+                                }
+                            }
+                        }
+
+                        /* width */
+                        ::-webkit-scrollbar {
+                            width: 5px;
+                        }
+
+                        /* Track */
+                        ::-webkit-scrollbar-track {
+                            background: #0a0909;
+                        }
+
+                        /* Handle */
+                        ::-webkit-scrollbar-thumb {
+                            background: #270808;
+                            border-radius: 25px;
+                        }
+
+                        /* Handle on hover */
+                        ::-webkit-scrollbar-thumb:hover {
+                            background: rgb(92, 92, 92);
+                        }
+                    }
+
+                }
+
+
+                .bottom {
+                    height: 70px;
+                    width: 100%;
+                    padding: 5px;
+
+                    .bottom_content {
+                        box-shadow: 0px 0px 5px #0000004d;
+                        border-radius: 0 0 20px 20px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

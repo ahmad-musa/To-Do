@@ -13,7 +13,7 @@
                 position: absolute;
                 background-color: $color2;
                 width: 100%;
-                height: 40vh;
+                height: 36vh;
                 top: 100%;
                 left: -200%;
                 display: flex;
@@ -37,6 +37,7 @@
 
                         a {
                             color: $color2;
+                            letter-spacing: 8px;
                         }
                     }
 
@@ -127,7 +128,7 @@
             .navbar2 {
                 position: absolute;
                 width: 50%;
-                height: 28vh;
+                height: 25vh;
                 top: 100%;
                 right: -200%;
                 background-color: $color2;
@@ -152,6 +153,7 @@
 
                         a {
                             color: $color2;
+                            letter-spacing: 8px;
                         }
                     }
 
@@ -168,12 +170,13 @@
 
             .navbar_show {
                 left: 0;
+                border-top: 3px solid $white;
 
                 .close {
                     position: absolute;
-                    right: 5px;
-                    top: 5px;
-                    font-size: 18px;
+                    right: 10px;
+                    top: 10px;
+                    font-size: 25px;
                     cursor: wait;
 
                     &:hover {
@@ -187,10 +190,19 @@
 
             .navbar_show2 {
                 right: 0;
+                border-top: 3px solid $white;
 
                 .close2 {
-                    right: 0;
-                    top: 0;
+                    position: absolute;
+                    right: 5px;
+                    top: 5px;
+                    font-size: 20px;
+                    cursor: wait;
+
+                    &:hover {
+                        color: $red;
+                        background-color: $black;
+                    }
                 }
             }
 
