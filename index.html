@@ -107,15 +107,15 @@
 
                             <div class="card">
                                 <div class="card-header">
-                                    <h5 class="text-uppercase"> Your to-do</h5>
+                                    <h5 class="text-uppercase"> Your to-do ( {{get_list.length}} items)</h5>
                                 </div>
 
                                 <div class="card-body">
-                                    <div class="d-flex justify-content-between">
+                                        <form class="d-flex justify-content-between" action="" @submit.prevent="add_data">
                                         <input type="text" @change="show_get_line" v-model="get_line"
                                             class="form-control w-75" placeholder="Title">
-                                        <button type="button" @click="add_data" class="btn btn-success">Add</button>
-                                    </div>
+                                        <button type="submit" class="btn btn-success">Add</button>
+                                    </form>
 
                                     <ul class="list" v-for="i in 1">
                                         <li class="list_item" v-for="(item,i) in get_list">
@@ -144,7 +144,11 @@
 
                                                 </div>
 
-                                                <button type="button" @click="delete_data(i)" class="btn">
+                                                <button type="button" @click="delete_data(i)" v-if="item.checked == true" class="btn">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </button>
+
+                                                <button type="button" v-else class="btn">
                                                     <i class="fas fa-trash-alt"></i>
                                                 </button>
 
