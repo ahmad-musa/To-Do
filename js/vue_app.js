@@ -8,7 +8,7 @@ const app = new Vue({
             get_line: '',
             get_list: [
                 {
-                    checked: false,
+                    checked: true,
                     line: 'test3',
                 },
                 {
@@ -26,14 +26,24 @@ const app = new Vue({
         show_get_line: function(){
             console.log(this.get_line);
         },
+
         add_data: function(){
             let data= {
                 checked: false,
                 line: this.get_line,
             };
 
-            this.get_list.push(data);
-            this.get_line = '';
+            //condition check for empty string
+
+            if(this.get_line){ 
+                this.get_list.push(data);
+                this.get_line = '';
+            }
+        },
+
+        delete_data: function(index){
+            console.log({list: this.get_list,index , line: this.get_list[index].line});
+            this.get_list.splice(index,1);
         }
     },
 

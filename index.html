@@ -112,7 +112,7 @@
 
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
-                                        <input type="text" @keyup="show_get_line" v-model="get_line"
+                                        <input type="text" @change="show_get_line" v-model="get_line"
                                             class="form-control w-75" placeholder="Title">
                                         <button type="button" @click="add_data" class="btn btn-success">Add</button>
                                     </div>
@@ -122,13 +122,29 @@
                                             <div class="d-flex justify-content-between">
 
                                                 <div class="check_div">
+                                                    <div v-if= "item.checked == true">
+                                                    <input type="checkbox" @click="item.checked = !item.checked" checked class="check" :id="'Item'+i">
+                                                </div>
+
+                                                    <div v-else @click="item.checked = !item.checked">
                                                     <input type="checkbox" class="check" :id="'Item'+i">
+                                                </div>
+
+                                                <div v-if= "item.checked == true" class="">
+                                                    <label class="label" :for="'Item'+i"> <del>{{item.line}}</del> 
+
+                                                    </label>
+                                                </div>
+
+                                                <div v-else>
                                                     <label class="label" :for="'Item'+i"> {{item.line}}
 
                                                     </label>
                                                 </div>
 
-                                                <button type="submit" class="btn">
+                                                </div>
+
+                                                <button type="button" @click="delete_data(i)" class="btn">
                                                     <i class="fas fa-trash-alt"></i>
                                                 </button>
 
