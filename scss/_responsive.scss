@@ -1,26 +1,25 @@
 @media (min-width: 576px) {
 
     body {
-        background: url('../img/bg.jpg') no-repeat center;
-        background-size: cover;
-        height: 100%;
 
         .main_body {
             margin: 0 auto;
             box-sizing: border-box;
-            border-radius: 25px;
             /* background: $glass;
             background: $transparent; 
             backdrop-filter: blur(5px);
             -webkit-backdrop-filter: blur(5px);  */
             height: 100vh;
             padding: 2vh;
+            
             /* margin: 2vh auto; */
             /* border-radius: 25px; */
 
             .overlay {
+
+                
                 background-color: rgba(0, 0, 0, .5);
-                height: 100%;
+                height: 100vh;
                 margin: 0 auto;
                 overflow: hidden;
                 border-radius: 25px;
@@ -76,57 +75,65 @@
 
                 .content {
                     flex: 1;
-                    padding: 5px 5px;
-                    height: calc(100vh - 170px);
+                    padding: 0 5px;
+                    height: calc(100vh - 173px);
 
-                    .app_content {
-                        flex: 1;
-                        /* background: $bgcolor; */
-                        background: $glass;
-                        backdrop-filter: blur(7px);
-                        -webkit-backdrop-filter: blur(7px);
+                    .app_content_body{
 
-                        .btn1 {
-                            /* width: 100px; */
-                            /* height: 50px; */
-                            padding: 10px 6px;
-                        }
+                        .app_content {
+                            flex: 1;
+                            /* background: $bgcolor; */
+                            background: $glass;
+                            backdrop-filter: blur(7px);
+                            -webkit-backdrop-filter: blur(7px);
+    
+                            .btn1 {
+                                /* width: 100px; */
+                                /* height: 50px; */
+                                padding: 10px 6px;
+                            }
+    
+                            .lg-btn {
+                                width: 115px;
+                                padding: 15px 10px;
+                                font-size: 18px;
+                            }
+    
+                            #gallery {
+    
+                                .card{
+                                    // background: $color2_accent;
+                                    background: $transparent;
+                                    color: $white;
+                                    box-shadow: 0 0 5px rgba(255, 255, 255, 0.65);
 
-                        .lg-btn {
-                            width: 115px;
-                            padding: 15px 10px;
-                            font-size: 18px;
-                        }
-
-                        .gallery {
-                            .img_holder {
-                                .img {
-                                    height: 30vh;
-                                }
+                                
+                                    }
+                            }
+    
+                            /* width */
+                            ::-webkit-scrollbar {
+                                width: 5px;
+                            }
+    
+                            /* Track */
+                            ::-webkit-scrollbar-track {
+                                background: #0a0909;
+                            }
+    
+                            /* Handle */
+                            ::-webkit-scrollbar-thumb {
+                                background: #270808;
+                                border-radius: 25px;
+                            }
+    
+                            /* Handle on hover */
+                            ::-webkit-scrollbar-thumb:hover {
+                                background: rgb(92, 92, 92);
                             }
                         }
-
-                        /* width */
-                        ::-webkit-scrollbar {
-                            width: 5px;
-                        }
-
-                        /* Track */
-                        ::-webkit-scrollbar-track {
-                            background: #0a0909;
-                        }
-
-                        /* Handle */
-                        ::-webkit-scrollbar-thumb {
-                            background: #270808;
-                            border-radius: 25px;
-                        }
-
-                        /* Handle on hover */
-                        ::-webkit-scrollbar-thumb:hover {
-                            background: rgb(92, 92, 92);
-                        }
                     }
+                    
 
                 }
 

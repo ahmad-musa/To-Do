@@ -9,15 +9,15 @@ const app = new Vue({
             get_list: [
                 {
                     checked: true,
-                    line: 'test3',
+                    line: 'test to delete',
                 },
                 {
                     checked: false,
-                    line: 'test2',
+                    line: 'select to delete',
                 },
                 {
                     checked: false,
-                    line: 'test1',
+                    line: 'test case1',
                 },
             ]
         }
