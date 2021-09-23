@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/cda880dbf7.js" crossorigin="anonymous"></script>
@@ -13,7 +18,7 @@
 
 <body>
 
-    <main class="main_body">
+    <main class="main_body" id="vue_app">
         <div class="overlay">
 
             <!-- Top Section -->
@@ -78,39 +83,63 @@
                     <div class="app_content">
                         <form action="" class="form" id="form" name="data_form">
                             <ul>
-
                                 <li>
 
-                                    <button type="button" class="btn1 lg-btn" name='bangla' onclick="khoj(name)">
+                                    <button type="button" class="btn1 lg-btn" name='yesterday' onclick="khoj(name)">
                                         Yesterday
                                     </button>
 
-                                    <button type="button" class="btn1 lg-btn active" name='foreign' onclick="khoj(name)">
+                                    <button type="button" class="btn1 lg-btn active" name='today'
+                                        onclick="khoj(name)">
                                         Today
                                     </button>
 
-                                    <button type="button" class="btn1 lg-btn" name='islam' onclick="khoj(name)">
+                                    <button type="button" class="btn1 lg-btn" name='nextday' onclick="khoj(name)">
                                         Nextday
                                     </button>
 
-                                    
-
                                 </li>
-
                             </ul>
-
                         </form>
+
                         <hr class="hr">
 
+                            <div class="text-center" id="gallery">
 
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="text-uppercase"> Your to-do</h5>
+                                    </div>
 
-                        <ul id="list">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between">
+                                            <input type="text" name="title" class="form-control w-75" placeholder="Title">
+                                            <button type="submit" class="btn btn-success">Add</button>
+                                        </div>
 
-                            <div class="gallery" id="gallery">
+                                        <ul class="list">
+                                            <li class="list_item">
+                                                <div class="d-flex justify-content-between">
+                                                    
+                                                    <div class="check_div">
+                                                        <input type="checkbox"
+                                                         class="check" id="Item">
+                                                        <label class="label" for="Item">1st Line</label>
+                                                    </div>
+                                                    
+                                                    <button type="submit" class="btn">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                    
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
 
                             </div>
 
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -152,7 +181,11 @@
         </div>
     </main>
 
+    <!-- Bootstrap -->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
     <script src="./js/control.js"></script>
 
 </body>
