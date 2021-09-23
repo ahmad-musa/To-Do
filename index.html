@@ -112,18 +112,20 @@
 
                                 <div class="card-body">
                                     <div class="d-flex justify-content-between">
-                                        <input type="text" name="title" @keyup="show_get_title" v-model="get_title"
+                                        <input type="text" @keyup="show_get_line" v-model="get_line"
                                             class="form-control w-75" placeholder="Title">
-                                        <button type="submit" class="btn btn-success">Add</button>
+                                        <button type="button" @click="add_data" class="btn btn-success">Add</button>
                                     </div>
 
                                     <ul class="list" v-for="i in 1">
-                                        <li class="list_item">
+                                        <li class="list_item" v-for="(item,i) in get_list">
                                             <div class="d-flex justify-content-between">
 
                                                 <div class="check_div">
                                                     <input type="checkbox" class="check" :id="'Item'+i">
-                                                    <label class="label" :for="'Item'+i">1st Line</label>
+                                                    <label class="label" :for="'Item'+i"> {{item.line}}
+
+                                                    </label>
                                                 </div>
 
                                                 <button type="submit" class="btn">
