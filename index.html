@@ -89,8 +89,7 @@
                                         Yesterday
                                     </button>
 
-                                    <button type="button" class="btn1 lg-btn active" name='today'
-                                        onclick="khoj(name)">
+                                    <button type="button" class="btn1 lg-btn active" name='today' onclick="khoj(name)">
                                         Today
                                     </button>
 
@@ -104,41 +103,41 @@
 
                         <hr class="hr">
 
-                            <div class="text-center" id="gallery">
+                        <div class="text-center" id="gallery">
 
-                                <div class="card">
-                                    <div class="card-header">
-                                        <h5 class="text-uppercase"> Your to-do</h5>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between">
-                                            <input type="text" name="title" class="form-control w-75" placeholder="Title">
-                                            <button type="submit" class="btn btn-success">Add</button>
-                                        </div>
-
-                                        <ul class="list">
-                                            <li class="list_item">
-                                                <div class="d-flex justify-content-between">
-                                                    
-                                                    <div class="check_div">
-                                                        <input type="checkbox"
-                                                         class="check" id="Item">
-                                                        <label class="label" for="Item">1st Line</label>
-                                                    </div>
-                                                    
-                                                    <button type="submit" class="btn">
-                                                        <i class="fas fa-trash-alt"></i>
-                                                    </button>
-                                                    
-                                                </div>
-                                            </li>
-                                        </ul>
-
-                                    </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="text-uppercase"> Your to-do</h5>
                                 </div>
 
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between">
+                                        <input type="text" name="title" @keyup="show_get_title" v-model="get_title"
+                                            class="form-control w-75" placeholder="Title">
+                                        <button type="submit" class="btn btn-success">Add</button>
+                                    </div>
+
+                                    <ul class="list" v-for="i in 1">
+                                        <li class="list_item">
+                                            <div class="d-flex justify-content-between">
+
+                                                <div class="check_div">
+                                                    <input type="checkbox" class="check" :id="'Item'+i">
+                                                    <label class="label" :for="'Item'+i">1st Line</label>
+                                                </div>
+
+                                                <button type="submit" class="btn">
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </button>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
                             </div>
+
+                        </div>
 
                     </div>
                 </div>
@@ -183,9 +182,15 @@
 
     <!-- Bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
 
-    
+    <!-- Vue JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
+
+    <script src="./js/vue_app.js"></script>
+
     <script src="./js/control.js"></script>
 
 </body>
