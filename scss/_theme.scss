@@ -22,7 +22,6 @@
                 align-items: center;
                 box-sizing: border-box;
                 z-index: 100;
-                /* padding: 5px 20px; */
 
                 .nav_links {
                     width: 100%;
@@ -30,7 +29,6 @@
                     text-align: center;
                     text-transform: uppercase;
                     line-height: 30px;
-                    /* font-weight: 500; */
 
                     &:hover {
                         background-color: $black;
@@ -138,7 +136,6 @@
                 align-items: center;
                 box-sizing: border-box;
                 z-index: 100;
-                /* padding: 5px 20px; */
 
                 .nav_links {
                     width: 100%;
@@ -146,7 +143,6 @@
                     text-align: center;
                     text-transform: uppercase;
                     line-height: 30px;
-                    /* font-weight: 500; */
 
                     &:hover {
                         background-color: $black;
@@ -218,19 +214,15 @@
             .app_content_body {
 
                 .app_content {
-                    /* Input Part Starts  */
+                    /* Top Content Part Starts  */
 
                     .form {
-                        /* background: $bgcolor; */
                         background: $glass;
-                        /* background: $transparent; */
                         backdrop-filter: blur(5px);
                         -webkit-backdrop-filter: blur(5px);
-                        /* color: $color2; */
 
                         ul {
                             padding: 8px 10px;
-                            /* margin: 10px 0px; */
 
                             li {
                                 display: flex;
@@ -279,12 +271,9 @@
                         }
                     }
 
-                    /* Input Part Ends  */
+                    /* Top Content Part Ends  */
 
-
-                    /*      Result Part        */
-
-                    /* Output Part Starts  */
+                    /* Main Content Part Starts  */
 
                     #gallery {
                         font-family: 'Roboto Condensed', sans-serif;
@@ -292,7 +281,6 @@
                         .card {
                             background: $transparent2;
                             color: $white;
-                            // border: 1px solid $color2;
                             padding: 5px;
                             margin: 5px 10px;
                             border-radius: 15px;
@@ -312,7 +300,6 @@
                             }
 
                             .card-body {
-                                // background: $transparent!important;
 
                                 form {
 
@@ -346,8 +333,7 @@
 
                                     display: flex;
                                     flex-direction: column-reverse;
-                                    // background: $transparent!important;
-
+                            
                                     .list_item {
                                         padding: 3px;
                                         margin: 10px 0;
@@ -380,8 +366,6 @@
 
                                             &:hover {
                                                 color: $grey;
-
-
                                             }
                                         }
                                     }
@@ -391,37 +375,7 @@
                         }
                     }
 
-
-
-                    // #list {
-                    //     padding: 5px 10px;
-                    //     /* border: 1px solid gray; */
-                    //     /* margin-top: 5px; */
-
-                    //     li {
-                    //         margin: 3px;
-                    //         /* padding: 15px; */
-                    //         width: 40px;
-                    //         height: 40px;
-                    //         /* border-radius: 10px; */
-                    //         display: inline-flex;
-                    //         justify-content: center;
-                    //         align-items: center;
-                    //         color: $secondary1;
-                    //         font-weight: 600;
-                    //         border: 1px solid $white;
-                    //         border-radius: 50%;
-
-                    //         &:hover {
-                    //             color: $white;
-                    //             border: 2px solid $secondary1;
-                    //             border-radius: 10px;
-                    //             /* border-radius: 50%; */
-                    //         }
-                    //     }
-                    // }
-
-                    /* Output Part Ends  */
+                    /* Main Content Part Ends  */
                 }
             }
         }
@@ -433,10 +387,6 @@
 
             .bottom_content {
                 background: $color2;
-                /* border: 1px solid red; */
-                /* height: 70px; */
-                /* width: 100%; */
-                /* padding: 5px; */
 
                 .nav_links {
 

@@ -19,17 +19,11 @@
                 background: none;
                 box-sizing: border-box;
                 font-family: 'Aldrich', sans-serif;
-                /* background: $glass;
-                background: $transparent; 
-                backdrop-filter: blur(5px);
-                -webkit-backdrop-filter: blur(5px);  */
                 min-height: 600px;
                 max-height: 740px;
                 padding: 2vh;
 
                 .overlay {
-                    // background-color: rgba(0, 0, 0, .5);
-                    // height: 80vh;
                     margin: 0 auto;
                     border-radius: 25px;
 
@@ -58,7 +52,6 @@
 
                         .navbar2 {
                             width: 40%;
-                            // height: 21vh;
                             top: 93%;
                             right: -300%;
                             height: 28vh;
@@ -94,7 +87,6 @@
 
                             .app_content {
                                 flex: 1;
-                                /* background: $bgcolor; */
                                 background: $glass;
                                 backdrop-filter: blur(7px);
                                 -webkit-backdrop-filter: blur(7px);
@@ -109,7 +101,6 @@
                                     font-family: 'Aldrich', sans-serif;
 
                                     .card {
-                                        // background: $color2_accent;
                                         background: $transparent;
                                         color: $white;
                                         box-shadow: 0 0 5px rgba(255, 255, 255, 0.65);
