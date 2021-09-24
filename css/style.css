@@ -121,7 +121,7 @@
 }
 
 .main_body .overlay ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
 }
 
 .main_body .overlay ::-webkit-scrollbar-track {
@@ -129,12 +129,13 @@
 }
 
 .main_body .overlay ::-webkit-scrollbar-thumb {
-  background: #050505;
-  border-radius: 25px;
+  background: #00a2ff;
+  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .main_body .overlay ::-webkit-scrollbar-thumb:hover {
-  background: #464646;
+  background: #616161;
 }
 
 .main_body .overlay .bottom .bottom_content {
@@ -457,7 +458,7 @@
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body form .input_text {
-  background: #00a2ff2c;
+  background: #00a2ff7e;
   color: whitesmoke;
   padding: 12px 6px;
 }
@@ -549,23 +550,34 @@
     background-size: cover;
     box-sizing: border-box;
     overflow: hidden;
+    margin: 0 auto;
   }
   body .packed {
     background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
   }
   body .packed .main_body {
-    margin: 0 auto;
+    margin: auto auto;
     background: none;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     /* background: $glass;
                 background: $transparent; 
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);  */
+    min-height: 600px;
+    max-height: 740px;
     padding: 2vh;
   }
   body .packed .main_body .overlay {
     margin: 0 auto;
     border-radius: 25px;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */
   }
   body .packed .main_body .overlay .top {
     height: 70px;
@@ -607,7 +619,8 @@
     flex: 1;
     padding: 0 5px;
     width: 500px;
-    height: calc(100vh - 173px);
+    min-height: 500px;
+    max-height: 570px;
   }
   body .packed .main_body .overlay .content .app_content_body .app_content {
     flex: 1;
@@ -615,10 +628,6 @@
     background: #ffffff0c;
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
-    /* width */
-    /* Track */
-    /* Handle */
-    /* Handle on hover */
   }
   body .packed .main_body .overlay .content .app_content_body .app_content .lg-btn {
     padding: 12px 24px;
@@ -629,18 +638,18 @@
     color: whitesmoke;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.65);
   }
-  body .packed .main_body .overlay .content .app_content_body .app_content ::-webkit-scrollbar {
-    width: 5px;
+  body .packed .main_body .overlay ::-webkit-scrollbar {
+    width: 10px;
   }
-  body .packed .main_body .overlay .content .app_content_body .app_content ::-webkit-scrollbar-track {
-    background: #0a0909;
+  body .packed .main_body .overlay ::-webkit-scrollbar-track {
+    background: #7a7a7a;
   }
-  body .packed .main_body .overlay .content .app_content_body .app_content ::-webkit-scrollbar-thumb {
-    background: #270808;
-    border-radius: 25px;
+  body .packed .main_body .overlay ::-webkit-scrollbar-thumb {
+    background: #00a2ff;
+    border-radius: 0 0 5px 5px;
   }
-  body .packed .main_body .overlay .content .app_content_body .app_content ::-webkit-scrollbar-thumb:hover {
-    background: #5c5c5c;
+  body .packed .main_body .overlay ::-webkit-scrollbar-thumb:hover {
+    background: #00a2ff7e;
   }
   body .packed .main_body .overlay .bottom {
     height: 70px;

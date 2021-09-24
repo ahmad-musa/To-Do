@@ -135,7 +135,7 @@
 
             /* width */
             ::-webkit-scrollbar {
-                width: 4px;
+                width: 8px;
             }
 
             /* Track */
@@ -145,13 +145,14 @@
 
             /* Handle */
             ::-webkit-scrollbar-thumb {
-                background: #050505;
-                border-radius: 25px;
+                background: $color2;
+                border-radius: 5px;
+                border-radius: 0 0 5px 5px;
             }
 
             /* Handle on hover */
             ::-webkit-scrollbar-thumb:hover {
-                background: rgb(70, 70, 70);
+                background: rgb(97, 97, 97);
             }
 
             /* Mid Section Ends */
