@@ -1,22 +1,4 @@
-    $color1: #0d048f;
-    $color2: #00a2ff;
-    $color2_accent: #00a2ff2c;
-    $color3: rgb(255, 38, 0);
-    $red: rgb(255, 38, 0);
-    $white: whitesmoke;
-    $bgcolor: #2e2e2e;
-    $grey: rgb(122, 122, 122);
-    $black: #1d1d1d;
-    $primary1: #b488e0;
-    $primary1: #089000;
-    $primary2: #06768570;
-    $secondary1: #3ff5cf;
-    $secondary2: #3df5c1;
-    $gradient: linear-gradient(65deg, #47def3 40%, #006347 80%);
-    $transparent: rgba(255, 255, 255, 0);
-    $transparent2:rgba(0, 0, 0, 0.3);
-    $glass: #ffffff0c;
-
+    @import 'config';
 
     .main_body {
         display: flex;
@@ -25,8 +7,6 @@
         /* justify-content: space-between; */
         height: 100vh;
         background: $glass;
-        backdrop-filter: blur(7px);
-        -webkit-backdrop-filter: blur(7px);
         /* border-radius: 25px; */
 
         /* background: url('../img/m_bg.png') no-repeat center; */
@@ -36,7 +16,7 @@
         overflow: hidden;
 
         .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.45);
             height: 100vh;
 
             /*        Top Section Starts        */
@@ -112,6 +92,9 @@
                 flex-wrap: wrap;
                 flex-direction: column;
                 height: calc(100vh - 121px);
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+
 
                 .app_content_body {
                     /* padding: 10px; */
