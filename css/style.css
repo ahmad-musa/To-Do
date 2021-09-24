@@ -464,28 +464,27 @@
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body form .input_text {
-  background: #00a2ff7e;
-  color: whitesmoke;
+  background: whitesmoke;
+  color: #00a2ff;
   padding: 12px 6px;
   border: none;
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body form .input_text:focus {
-  background: whitesmoke;
-  color: #00a2ff;
+  background: #00a2ff;
+  color: whitesmoke;
+  outline: 2px solid whitesmoke;
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body form .btn {
   padding: 10px 20px;
-  background: whitesmoke;
-  color: #00a2ff;
-  border: 2px solid whitesmoke;
+  background: #00a2ff;
+  color: whitesmoke;
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body form .btn:hover {
-  background: #00a2ff;
-  color: whitesmoke;
-  border: 2px solid #00a2ff;
+  background: whitesmoke;
+  color: #00a2ff;
 }
 
 .main_body .overlay .content .app_content_body .app_content #gallery .card .card-body .list {

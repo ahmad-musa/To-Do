@@ -317,27 +317,27 @@
                                 form {
 
                                     .input_text {
-                                        background: $color2_accent;
-                                        color: $white;
+                                        background: $white;
+                                        color: $color2;
                                         padding: 12px 6px;
                                         border: none;
 
                                         &:focus {
-                                            background: $white;
-                                            color: $color2;
+                                            background: $color2;
+                                            color: $white;
+                                            outline: 2px solid $white;
                                         }
                                     }
 
                                     .btn {
                                         padding: 10px 20px;
-                                        background: $white;
-                                        color: $color2;
-                                        border: 2px solid $white;
+                                        background: $color2;
+                                        color: $white;
 
                                         &:hover {
-                                            background: $color2;
-                                            color: $white;
-                                            border: 2px solid $color2;
+                                            background: $white;
+                                            color: $color2;
+                                            
                                         }
                                     }
                                 }
