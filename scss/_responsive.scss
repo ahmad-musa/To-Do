@@ -1,23 +1,24 @@
 @media (min-width: 576px) {
 
     body {
+        margin: 0 auto;
         background: url('../img/bg.jpg') no-repeat center;
         background-size: cover;
         box-sizing: border-box;
         overflow: hidden;
-        margin: 0 auto;
 
         .packed {
             background-color: rgba(0, 0, 0, .6);
             height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             .main_body {
-                margin: auto auto;
+                margin: 0 auto;
                 background: none;
                 box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                font-family: 'Aldrich', sans-serif;
                 /* background: $glass;
                 background: $transparent; 
                 backdrop-filter: blur(5px);
@@ -105,6 +106,7 @@
                                 }
 
                                 #gallery {
+                                    font-family: 'Aldrich', sans-serif;
 
                                     .card {
                                         // background: $color2_accent;

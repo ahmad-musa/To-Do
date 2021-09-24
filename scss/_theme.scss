@@ -286,9 +286,10 @@
 
                     /* Output Part Starts  */
 
-                    #gallery{
+                    #gallery {
+                        font-family: 'Roboto Condensed', sans-serif;
 
-                        .card{
+                        .card {
                             background: $transparent2;
                             color: $white;
                             // border: 1px solid $color2;
@@ -297,37 +298,43 @@
                             border-radius: 15px;
                             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
-                            .card-header{
+                            .card-header {
 
-                                h5{
+                                h5 {
                                     font-size: 28px;
-                                    font-weight: 600;
+                                    font-weight: 500;
+
+                                    .num {
+                                        color: $red;
+                                        font-weight: 600;
+                                    }
                                 }
                             }
 
-                            .card-body{
+                            .card-body {
                                 // background: $transparent!important;
-                                
-                                form{
 
-                                    .input_text{
+                                form {
+
+                                    .input_text {
                                         background: $color2_accent;
                                         color: $white;
                                         padding: 12px 6px;
+                                        border: none;
 
-                                        &:focus{
-                                            background: $color2;
-
+                                        &:focus {
+                                            background: $white;
+                                            color: $color2;
                                         }
                                     }
 
-                                    .btn{
+                                    .btn {
                                         padding: 10px 20px;
                                         background: $white;
                                         color: $color2;
                                         border: 2px solid $white;
 
-                                        &:hover{
+                                        &:hover {
                                             background: $color2;
                                             color: $white;
                                             border: 2px solid $color2;
@@ -340,40 +347,41 @@
                                     display: flex;
                                     flex-direction: column-reverse;
                                     // background: $transparent!important;
-    
+
                                     .list_item {
                                         padding: 3px;
                                         margin: 10px 0;
                                         border: 1px solid $white;
                                         border-radius: 5px;
+                                        text-transform: capitalize;
 
-                                        &:hover{
-                                            border: 1px solid $color2;    
+                                        &:hover {
+                                            border: 1px solid $color2;
                                         }
-            
+
                                         .check_div {
                                             display: flex;
                                             align-items: center;
-            
+
                                             .check {
                                                 height: 15px;
                                                 width: 15px;
                                             }
-            
+
                                             .label {
                                                 margin-left: 5px;
                                                 font-size: 16px;
                                             }
                                         }
-            
-                                        .btn{
+
+                                        .btn {
                                             color: $red;
                                             padding: 10px;
-            
-                                            &:hover{
+
+                                            &:hover {
                                                 color: $grey;
-                                                
-            
+
+
                                             }
                                         }
                                     }
@@ -382,8 +390,8 @@
 
                         }
                     }
-                    
-                    
+
+
 
                     // #list {
                     //     padding: 5px 10px;
