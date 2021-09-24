@@ -15,7 +15,6 @@
 
 .main_body .overlay {
   background-color: rgba(0, 0, 0, 0.45);
-  height: 100vh;
   /*        Top Section Starts        */
   /* Top Section Ends */
   /* Mid Section Starts */
@@ -563,12 +562,9 @@
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);  */
     padding: 2vh;
-    /* margin: 2vh auto; */
-    /* border-radius: 25px; */
   }
   body .packed .main_body .overlay {
     margin: 0 auto;
-    overflow: hidden;
     border-radius: 25px;
   }
   body .packed .main_body .overlay .top {
